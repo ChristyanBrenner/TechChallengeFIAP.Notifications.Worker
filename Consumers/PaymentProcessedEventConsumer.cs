@@ -11,12 +11,12 @@ namespace Consumers
 
             if (message.Status == PaymentStatus.Approved)
             {
-                Console.WriteLine("✅ PAGAMENTO APROVADO");
-                Console.WriteLine($"Agradecemos a sua compra do {message.GameName}");
+                Console.WriteLine("PAGAMENTO APROVADO!");
+                Console.WriteLine($"Agradecemos a sua compra do jogo {message.GameName}");
             }
             else
             {
-                Console.WriteLine("❌ PAGAMENTO REJEITADO");
+                Console.WriteLine("PAGAMENTO REJEITADO!");
                 Console.WriteLine($"Não foi possivel comprar o jogo {message.GameName}");
             }
 

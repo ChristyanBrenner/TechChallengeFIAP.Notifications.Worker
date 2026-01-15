@@ -16,7 +16,10 @@ builder.Services.AddMassTransit(x =>
             h.Password("guest");
         });
 
-        cfg.ConfigureEndpoints(context);
+        cfg.ReceiveEndpoint("notifications-payment-processed", e =>
+        {
+            e.ConfigureConsumer<PaymentProcessedEventConsumer>(context);
+        });
     });
 });
 
