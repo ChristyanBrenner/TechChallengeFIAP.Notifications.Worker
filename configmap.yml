@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: notifications-worker-config
+data:
+  RABBITMQ_HOST: "rabbitmq"        # host do RabbitMQ
+  QUEUE_NAME: "notifications-queue"
+  EXTERNAL_SERVICE_URL: "http://exemplo.com/api"

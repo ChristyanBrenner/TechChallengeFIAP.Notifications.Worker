@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudGames.Notifications.Worker", "CloudGames.Notifications.Worker\CloudGames.Notifications.Worker.csproj", "{BE39BCF4-F33F-4FCF-944B-9D8A785A0762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudGames.Notifications.Worker", "CloudGames.Notifications.Worker\CloudGames.Notifications.Worker.csproj", "{BE39BCF4-F33F-4FCF-944B-9D8A785A0762}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudGames.Contracts", "..\CloudGames.Contracts\CloudGames.Contracts\CloudGames.Contracts.csproj", "{BF432118-59C3-4A2B-B027-B1BF4AA55945}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumers", "Consumers\Consumers.csproj", "{C664593D-E2A4-45AA-AFF2-D5B736185A10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consumers", "Consumers\Consumers.csproj", "{C664593D-E2A4-45AA-AFF2-D5B736185A10}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{06B7A5EB-0624-4440-A284-53C4533168D6}"
+	ProjectSection(SolutionItems) = preProject
+		configmap.yml = configmap.yml
+		deployment.yml = deployment.yml
+		secret.yml = secret.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudGames.Contracts", "..\TechChallengeFIAP.Contracts\CloudGames.Contracts\CloudGames.Contracts.csproj", "{4B9BFC37-CDF2-4E4E-AFFC-511FBD3EDD24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +26,14 @@ Global
 		{BE39BCF4-F33F-4FCF-944B-9D8A785A0762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE39BCF4-F33F-4FCF-944B-9D8A785A0762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE39BCF4-F33F-4FCF-944B-9D8A785A0762}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF432118-59C3-4A2B-B027-B1BF4AA55945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF432118-59C3-4A2B-B027-B1BF4AA55945}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF432118-59C3-4A2B-B027-B1BF4AA55945}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF432118-59C3-4A2B-B027-B1BF4AA55945}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C664593D-E2A4-45AA-AFF2-D5B736185A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C664593D-E2A4-45AA-AFF2-D5B736185A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C664593D-E2A4-45AA-AFF2-D5B736185A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C664593D-E2A4-45AA-AFF2-D5B736185A10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B9BFC37-CDF2-4E4E-AFFC-511FBD3EDD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B9BFC37-CDF2-4E4E-AFFC-511FBD3EDD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B9BFC37-CDF2-4E4E-AFFC-511FBD3EDD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B9BFC37-CDF2-4E4E-AFFC-511FBD3EDD24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
